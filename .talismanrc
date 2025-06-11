@@ -4,8 +4,8 @@ ignoreConfigs:
   - filename: "dist/bundle.js"
 
 fileignoreconfig:
-- filename: dist/index.js
-  checksum: 8482186194667d1038f0d9c9f1b7cb9bcc29dc3b5f95df8a7ff7f7d1fc5dc3e8
 - filename: package-lock.json
-  checksum: d8c09a52af709b6d2bade75eedc745dd1014939df3da72c5b8d174241396baac
+  checksum: 472996666d1d4db9da3d1934c1deb873c7f424198f995784c5d03d7eb63eb537
+- filename: dist/index.js
+  checksum: 5eb3e01ad4ba159a80876979eec6f97d145dd0ad5f8cbda57eb6a1824849575f
 version: "1.0"
