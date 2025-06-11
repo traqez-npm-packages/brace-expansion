@@ -1,4 +1,11 @@
+ignoreConfigs:
+  - filename: "package-lock.json"
+  - filename: "yarn.lock"
+  - filename: "dist/bundle.js"
+
 fileignoreconfig:
-- filename: index.js
-  checksum: 2fdd50d990b40483918bfa0e9b2efafa6e8b5000a52efdf26ed7a9113f927a23
+- filename: dist/index.js
+  checksum: 8482186194667d1038f0d9c9f1b7cb9bcc29dc3b5f95df8a7ff7f7d1fc5dc3e8
+- filename: package-lock.json
+  checksum: d8c09a52af709b6d2bade75eedc745dd1014939df3da72c5b8d174241396baac
 version: "1.0"
