@@ -1,0 +1,4 @@
+fileignoreconfig:
+- filename: index.js
+  checksum: 2fdd50d990b40483918bfa0e9b2efafa6e8b5000a52efdf26ed7a9113f927a23
+version: "1.0"

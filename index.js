@@ -154,11 +154,13 @@ function expand (str, isTop) {
     const isOptions = m.body.indexOf(',') >= 0
     if (!isSequence && !isOptions) {
       // {a},b}
-      if (m.post.match(/,(?!,).*\}/)) {
-        str = m.pre + '{' + m.body + escClose + m.post
-        return expand(str)
-      }
-      return [str]
+      // Fixes the bug at: https://github.com/advisories/GHSA-v6h2-p8h4-qcjw
+      // Refer: https://github.com/juliangruber/brace-expansion/pull/65/commits/a5b98a4f30d7813266b221435e1eaaf25a1b0ac5
+      // if (m.post.match(/,.*\}/)) {
+        if (m.post.match(/,(?!,).*\}/)) {
+          str = m.pre + '{' + m.body + escClose + m.post
+          return expand(str)
+        }
     }
 
     let n
